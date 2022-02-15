@@ -1,59 +1,7 @@
-# sb_4.11
+# JPC ASV analysis
 
-Rename: ```SeqBiome__STC``` 
+See analysis for the ```4.11__jpc__chunk_raw_assembly.sh``` for pre-processing and ```4.11__jpc__chunk__dada2_decipher.R``` for processing through ```dada2``` and some messy taconomic assignment. 
 
-Or possibly ```SB__STC```
+See also the ```4.11__jpc__subchunk__filtAndTrim-w-Figaro.R``` that uses Zymo's figaro app to determine cut offs on a per-sample basis.
 
-Even more likely, fork this and make it open.
-
-
-quickref:
-```
-# SSH clone 
-git clone git@github.com:handibles/sb_4.11
-# HTTPS clone
-git clone https://github.com/handibles/sb_4.11
-
-
-# commit
-git init
-git add .
-git commit -m "first stash and commit"                                 # note comment arg
-git remote add origin github@github.com:handibles/XXX_REPO_NAME_XXX    # note syntax = ssh
-git push -u origin master                                              # local -> cloud
-```
-
-This repo should be pullable and usable for SB projects (16S focused at the mo).
-
-general structure
-
-```
-      analysis
-        ¬| bash - pipeline, rsync, misc.
-         | py   - misc.
-         | R    - scripts and functions
-
-      documents
-        ¬| reproducibility guidelines etc
-         | outputs, generated HTML or PDF docs
-
-      examples
-        ¬| training, literature or tutorial data  [[ ```DELETED``` ]]
-
-      input    (omitted, empty)
-        ¬| external data
-
-      output   (omitted, empty)
-        ¬| outputs from different stages 
-
-      vis      (omitted, empty)
-        ¬| visual outputs
-
-      SB__4.11.Rproj    # note prob with nomenclature
-
-```   
-
-See 0.0 for the nascent blog-ish post detailing creating this repo. Should ideally be moved to a more narrative repo of unknown descent. 
-
-Consider how these _documentation pages_ will be arranged within this setup. In ```documents```?
-
+Analysis assumes that raw reads are starting in a ```dir``` named ```/home/<user>/data/4.11__jpc```, and much of the large intermediate material is stored there (outside this repo).
