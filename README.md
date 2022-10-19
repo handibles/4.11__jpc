@@ -7,4 +7,4 @@ See also the ```4.11__jpc__subchunk__filtAndTrim-w-Figaro.R``` that uses Zymo's 
 Analysis assumes that raw reads are starting in a ```dir``` named ```/home/<user>/data/4.11__jpc```, and much of the large intermediate material is stored there (outside this repo).
 
 
-Let us know if you want to play with it on the server (xxx.xxx.189.162)
+Let us know if you want to play with it on the server (xxx.xxx.yyy.yyy
